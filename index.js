@@ -19,5 +19,14 @@ app.get('/', (req, res) => {
 });
 
 server.listen(3000, () => {
-  console.log('server running at http://localhost:3000');
-});
+  console.log(`server running at ${process.pid} `);
+}); 
+
+
+// node js stream module --> used to handle streaming data in node js
+// process the data by breaking it into smaller chunks --> memory optimization
+// types of streams : readable, writable, duplex, transform
+// example : reading a large file using stream, zip a file using stream
+
+
+// node js cluster module --> 
